@@ -11,8 +11,8 @@
             "ios": "4.6.0"
         }
     },
-    "center": [-107.21853279829247, 44.52814796414165],
-    "zoom": 4.259497981242966,
+    "center": [-122.29481872705878, 47.64969219018491],
+    "zoom": 13.874290367543194,
     "bearing": 0,
     "pitch": 0,
     "sources": {
@@ -1159,8 +1159,8 @@
     ],
     "created": "2019-02-12T00:14:21.721Z",
     "id": "cjs10ktt009w51go34ddo3z4m",
-    "modified": "2019-02-17T00:03:24.251Z",
+    "modified": "2019-02-17T00:59:40.487Z",
     "owner": "benjiantolin",
-    "visibility": "public",
+    "visibility": "private",
     "draft": false
 }
