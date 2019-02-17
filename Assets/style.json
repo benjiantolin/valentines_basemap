@@ -11,8 +11,8 @@
             "ios": "4.6.0"
         }
     },
-    "center": [-112.86317757748935, 45.95113976449608],
-    "zoom": 4.947582846081289,
+    "center": [-107.21853279829247, 44.52814796414165],
+    "zoom": 4.259497981242966,
     "bearing": 0,
     "pitch": 0,
     "sources": {
@@ -74,7 +74,7 @@
                     ["hospital"],
                     "hsl(0, 56%, 89%)",
                     ["park", "pitch"],
-                    "hsl(111, 100%, 82%)",
+                    "hsl(29, 90%, 41%)",
                     ["school"],
                     "#ead6c8",
                     "hsla(0, 0%, 0%, 0)"
@@ -849,7 +849,7 @@
             },
             "paint": {
                 "text-color": "hsl(38, 0%, 100%)",
-                "text-halo-color": "hsla(0, 0%, 100%, 0.75)",
+                "text-halo-color": "hsla(0, 86%, 73%, 0.75)",
                 "text-halo-width": 1,
                 "text-halo-blur": 0.5
             }
@@ -1159,7 +1159,7 @@
     ],
     "created": "2019-02-12T00:14:21.721Z",
     "id": "cjs10ktt009w51go34ddo3z4m",
-    "modified": "2019-02-16T22:11:09.101Z",
+    "modified": "2019-02-17T00:03:24.251Z",
     "owner": "benjiantolin",
     "visibility": "public",
     "draft": false
