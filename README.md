@@ -1,6 +1,6 @@
 # Valentine's Chocolate Basemap using Mapbox
 
-[Click here for mapview](benjiantolin.github.io/valentines_basemap)
+[Click here for mapview](benjiantolin.github.io/valentines_basemap/index.html)
 
 
 ### Introduction
