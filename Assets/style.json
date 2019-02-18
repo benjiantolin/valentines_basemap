@@ -11,8 +11,8 @@
             "ios": "4.6.0"
         }
     },
-    "center": [-122.29481872705878, 47.64969219018491],
-    "zoom": 13.874290367543194,
+    "center": [-32.707958612839946, 57.39236349871891],
+    "zoom": 1.6365690830703716,
     "bearing": 0,
     "pitch": 0,
     "sources": {
@@ -70,13 +70,13 @@
                     "match",
                     ["get", "class"],
                     ["airport"],
-                    "hsl(345, 6%, 87%)",
+                    "hsl(108, 5%, 86%)",
                     ["hospital"],
-                    "hsl(0, 56%, 89%)",
+                    "hsl(0, 0%, 100%)",
                     ["park", "pitch"],
                     "hsl(29, 90%, 41%)",
                     ["school"],
-                    "#ead6c8",
+                    "hsl(25, 100%, 0%)",
                     "hsla(0, 0%, 0%, 0)"
                 ],
                 "fill-opacity": [
@@ -103,7 +103,7 @@
             ],
             "layout": {"line-join": "round", "line-cap": "round"},
             "paint": {
-                "line-color": "hsl(205, 76%, 70%)",
+                "line-color": "hsl(317, 88%, 77%)",
                 "line-width": [
                     "interpolate",
                     ["exponential", 1.3],
@@ -131,7 +131,11 @@
             "source-layer": "water",
             "filter": ["all"],
             "layout": {},
-            "paint": {"fill-color": "hsl(323, 92%, 85%)", "fill-opacity": 0.72}
+            "paint": {
+                "fill-color": "hsl(317, 88%, 77%)",
+                "fill-opacity": 0.72,
+                "fill-pattern": "heart-11"
+            }
         },
         {
             "id": "aeroway-polygon",
@@ -151,7 +155,10 @@
                 ]
             ],
             "layout": {},
-            "paint": {"fill-color": "hsl(0, 0%, 77%)"}
+            "paint": {
+                "fill-color": "hsl(0, 0%, 100%)",
+                "fill-pattern": "airfield-11"
+            }
         },
         {
             "id": "aeroway-line",
@@ -191,7 +198,7 @@
             ],
             "layout": {},
             "paint": {
-                "fill-color": "hsl(38, 35%, 78%)",
+                "fill-color": "hsl(360, 87%, 65%)",
                 "fill-opacity": [
                     "interpolate",
                     ["linear"],
@@ -443,7 +450,7 @@
                         "trunk_link"
                     ],
                     "hsl(0, 66%, 89%)",
-                    "hsl(0, 53%, 100%)"
+                    "hsl(36, 79%, 71%)"
                 ]
             }
         },
@@ -492,7 +499,7 @@
                     16,
                     2
                 ],
-                "line-color": "hsl(38, 48%, 86%)",
+                "line-color": "hsl(36, 79%, 71%)",
                 "line-gap-width": [
                     "interpolate",
                     ["exponential", 1.5],
@@ -641,8 +648,8 @@
                         "service",
                         "track"
                     ],
-                    "hsl(38, 100%, 98%)",
-                    "hsl(0, 0%, 100%)"
+                    "hsl(0, 66%, 89%)",
+                    "hsl(36, 79%, 71%)"
                 ]
             }
         },
@@ -815,9 +822,9 @@
                 "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]]
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 0%)",
+                "text-halo-width": 1,
                 "text-halo-color": "hsla(0, 0%, 100%, 0.95)",
-                "text-halo-width": 1
+                "text-color": "hsl(0, 97%, 54%)"
             }
         },
         {
@@ -840,7 +847,7 @@
                 ],
                 "icon-image": ["concat", ["get", "maki"], "-11"],
                 "text-max-angle": 38,
-                "text-font": ["Spectral Medium", "Arial Unicode MS Regular"],
+                "text-font": ["Heebo ExtraBold", "Arial Unicode MS Regular"],
                 "text-padding": 2,
                 "text-offset": [0, 0.75],
                 "text-anchor": "top",
@@ -849,7 +856,7 @@
             },
             "paint": {
                 "text-color": "hsl(38, 0%, 100%)",
-                "text-halo-color": "hsla(0, 86%, 73%, 0.75)",
+                "text-halo-color": "hsla(36, 100%, 42%, 0.75)",
                 "text-halo-width": 1,
                 "text-halo-blur": 0.5
             }
@@ -921,7 +928,7 @@
                 "text-transform": "uppercase",
                 "text-letter-spacing": 0.15,
                 "text-max-width": 8,
-                "text-font": ["Roboto Regular", "Arial Unicode MS Regular"],
+                "text-font": ["Tangerine Regular", "Arial Unicode MS Regular"],
                 "text-padding": 3,
                 "text-size": [
                     "interpolate",
@@ -935,9 +942,10 @@
                 "text-rotate": -45
             },
             "paint": {
-                "text-halo-color": "hsla(0, 0%, 100%, 0.95)",
+                "text-halo-color": "hsla(0, 0%, 0%, 0.95)",
                 "text-halo-width": 1,
-                "text-color": "hsl(38, 62%, 21%)"
+                "text-color": "hsl(38, 0%, 0%)",
+                "text-opacity": 1
             }
         },
         {
@@ -964,17 +972,14 @@
                     ["linear"],
                     ["zoom"],
                     5,
-                    ["match", ["get", "type"], "town", 9.5, 8],
+                    ["match", ["get", "type"], "town", 1, 8],
                     18,
-                    50
+                    75
                 ],
                 "text-font": [
                     "step",
                     ["zoom"],
-                    [
-                        "literal",
-                        ["Tangerine Regular", "Arial Unicode MS Regular"]
-                    ],
+                    ["literal", ["Tangerine Bold", "Arial Unicode MS Regular"]],
                     12,
                     [
                         "match",
@@ -992,12 +997,20 @@
                 ],
                 "text-max-width": 7,
                 "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]],
-                "text-rotate": -45
+                "text-rotate": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    7,
+                    -45,
+                    17,
+                    0
+                ]
             },
             "paint": {
-                "text-color": "hsl(0, 50%, 100%)",
+                "text-color": "hsl(0, 100%, 0%)",
                 "text-halo-blur": 0.5,
-                "text-halo-color": "hsla(0, 15%, 0%, 0.95)",
+                "text-halo-color": "hsla(43, 95%, 58%, 0.95)",
                 "text-halo-width": 1
             }
         },
@@ -1145,7 +1158,7 @@
                     ["linear"],
                     ["zoom"],
                     1,
-                    ["step", ["get", "symbolrank"], 60, 3, 10, 5, 9],
+                    ["step", ["get", "symbolrank"], 75, 3, 10, 5, 9],
                     9,
                     ["step", ["get", "symbolrank"], 35, 3, 27, 5, 22]
                 ]
@@ -1159,7 +1172,7 @@
     ],
     "created": "2019-02-12T00:14:21.721Z",
     "id": "cjs10ktt009w51go34ddo3z4m",
-    "modified": "2019-02-17T00:59:40.487Z",
+    "modified": "2019-02-18T06:13:03.128Z",
     "owner": "benjiantolin",
     "visibility": "private",
     "draft": false
