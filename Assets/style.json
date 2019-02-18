@@ -1,6 +1,6 @@
 {
     "version": 8,
-    "name": "Valentine's Basemap",
+    "name": "Valentine's Chocolate Basemap",
     "metadata": {
         "mapbox:origin": "basic-template",
         "mapbox:autocomposite": true,
@@ -11,8 +11,8 @@
             "ios": "4.6.0"
         }
     },
-    "center": [-105.53609699087042, 38.13712858873785],
-    "zoom": 3.2487598271604408,
+    "center": [-98.84221092262811, 36.72055922160533],
+    "zoom": 3.09202601097245,
     "bearing": 0,
     "pitch": 0,
     "sources": {
@@ -198,7 +198,7 @@
             ],
             "layout": {},
             "paint": {
-                "fill-color": "hsl(0, 84%, 78%)",
+                "fill-color": "hsl(26, 49%, 34%)",
                 "fill-opacity": [
                     "interpolate",
                     ["linear"],
@@ -928,7 +928,7 @@
                 "text-transform": "uppercase",
                 "text-letter-spacing": 0.15,
                 "text-max-width": 8,
-                "text-font": ["Tangerine Regular", "Arial Unicode MS Regular"],
+                "text-font": ["Hursheys Regular", "Arial Unicode MS Regular"],
                 "text-padding": 3,
                 "text-size": [
                     "interpolate",
@@ -939,12 +939,22 @@
                     16,
                     16
                 ],
-                "text-rotate": -45
+                "text-rotate": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    -45,
+                    20,
+                    0,
+                    22,
+                    0
+                ]
             },
             "paint": {
                 "text-halo-color": "hsla(0, 0%, 0%, 0.95)",
                 "text-halo-width": 1,
-                "text-color": "hsl(38, 0%, 0%)",
+                "text-color": "hsl(38, 0%, 100%)",
                 "text-opacity": 1
             }
         },
@@ -1039,7 +1049,7 @@
                     3,
                     ["step", ["get", "symbolrank"], 12, 9, 11, 12, 10, 14, 6.5],
                     14,
-                    60
+                    35
                 ],
                 "text-font": [
                     "step",
@@ -1178,7 +1188,7 @@
     ],
     "created": "2019-02-12T00:14:21.721Z",
     "id": "cjs10ktt009w51go34ddo3z4m",
-    "modified": "2019-02-18T07:37:22.594Z",
+    "modified": "2019-02-18T08:38:08.565Z",
     "owner": "benjiantolin",
     "visibility": "private",
     "draft": false
