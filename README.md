@@ -1,4 +1,4 @@
-# Valentine's Basemap using Mapbox
+# Valentine's Chocolate Basemap using Mapbox
 
 [Click here for mapview](benjiantolin.github.io/valentines_basemap)
 
@@ -8,4 +8,4 @@ This base map is Valentine's Day Chocolate themed. Various shades of chocolate r
 
 ####Sources
 - [Hurshey's font](https://www.dafont.com/hursheys.font) by Sharkshock
--
+- [Mapbox](https://www.mapbox.com/)
