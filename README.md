@@ -4,7 +4,7 @@
 
 
 ### Introduction
-This base map is designed to be Valentine's Day chocolate themed. Various shades of chocolate represent  land features, while a heart icon pattern with customized pink coloring blanket the water layer. The Hurshey's font was imported into Mapbox Studio to resemble a famouse chocolate bar.
+This base map is designed to be Valentine's Day chocolate themed. Various shades of chocolate represent  land features, while a heart icon pattern with customized pink coloring blanket the water layer. The Hurshey's font was imported into Mapbox Studio to resemble a famouse chocolate bar. This base map was based off of the Mapbox Basic Template.  
 
 ### Libraries
 - leaflet.css
