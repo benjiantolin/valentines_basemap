@@ -11,8 +11,8 @@
             "ios": "4.6.0"
         }
     },
-    "center": [-98.84221092262811, 36.72055922160533],
-    "zoom": 3.09202601097245,
+    "center": [-119.63158172769732, 47.112764610035754],
+    "zoom": 6.079445599997817,
     "bearing": 0,
     "pitch": 0,
     "sources": {
@@ -847,7 +847,7 @@
                 ],
                 "icon-image": ["concat", ["get", "maki"], "-11"],
                 "text-max-angle": 38,
-                "text-font": ["Heebo ExtraBold", "Arial Unicode MS Regular"],
+                "text-font": ["Asap Bold", "Arial Unicode MS Regular"],
                 "text-padding": 2,
                 "text-offset": [0, 0.75],
                 "text-anchor": "top",
@@ -855,7 +855,7 @@
                 "text-max-width": 8
             },
             "paint": {
-                "text-color": "hsl(38, 0%, 100%)",
+                "text-color": "hsl(111, 77%, 76%)",
                 "text-halo-color": "hsla(36, 0%, 0%, 0.75)",
                 "text-halo-width": 1,
                 "text-halo-blur": 0.5
@@ -1074,7 +1074,15 @@
                     ]
                 ],
                 "text-max-width": 10,
-                "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]],
+                "text-field": [
+                    "step",
+                    ["zoom"],
+                    "",
+                    4,
+                    ["coalesce", ["get", "name_en"], ["get", "name"]],
+                    22,
+                    ["coalesce", ["get", "name_en"], ["get", "name"]]
+                ],
                 "text-rotate": [
                     "interpolate",
                     ["linear"],
@@ -1127,14 +1135,14 @@
                     "step",
                     ["zoom"],
                     ["get", "abbr"],
-                    5,
+                    3,
                     ["coalesce", ["get", "name_en"], ["get", "name"]]
                 ],
                 "text-letter-spacing": 0.2,
                 "text-max-width": 6
             },
             "paint": {
-                "text-color": "hsl(38, 0%, 100%)",
+                "text-color": "hsl(38, 100%, 69%)",
                 "text-halo-color": "hsla(317, 0%, 0%, 0.95)",
                 "text-halo-width": 2,
                 "text-halo-blur": 0
@@ -1188,7 +1196,7 @@
     ],
     "created": "2019-02-12T00:14:21.721Z",
     "id": "cjs10ktt009w51go34ddo3z4m",
-    "modified": "2019-02-18T08:38:08.565Z",
+    "modified": "2019-02-19T07:32:34.008Z",
     "owner": "benjiantolin",
     "visibility": "private",
     "draft": false
